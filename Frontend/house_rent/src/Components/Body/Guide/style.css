@@ -1,0 +1,58 @@
+.loanbackground {
+    background-image: url("/assets/images/loancalculator.jpeg");
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    margin-top: 5%;
+    background-attachment: fixed;
+}
+
+.loan-calculator {
+    margin-top: 20%;
+}
+
+.button31 {
+    margin-top: 5%;
+    padding: 14px 16px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #6053fc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #6053fc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+    min-height: 10px;
+    width: auto;
+    outline: none;
+
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    will-change: transform;
+}
+
+.button31:disabled {
+    pointer-events: none;
+}
+
+.button31:hover {
+    color: #fff;
+    background-color: #6053fc;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button31:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

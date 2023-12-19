@@ -1,0 +1,218 @@
+.minscreen {
+    background-image: url("/assets/images/background.jpg");
+    height: 90vh;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1.5;
+}
+
+.headertext {
+    text-align: center;
+    color: white;
+    padding-top: 5cm;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.placelist {
+    margin-top: 2cm;
+}
+
+.Populartext {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.banner {
+    background-image: url("/assets/images/herobg.png");
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 10%;
+}
+
+.addpropertyheadertext {
+    padding: 15% 18% 2%;
+    font-size: 1cm;
+    font-weight: 600;
+}
+
+.addpropertytext {
+    padding: 0% 18% 2%;
+    font-size: 18px;
+
+}
+
+.button23 {
+    padding: 14px 16px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #6053fc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #6053fc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+    min-height: 10px;
+    width: auto;
+    outline: none;
+    margin-left: 17% !important;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    will-change: transform;
+}
+
+.button23:disabled {
+    pointer-events: none;
+}
+
+.button23:hover {
+    color: #fff;
+    background-color: #6053fc;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button23:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.propertyheadertext {
+    font-size: 0.9cm;
+    font-weight: 600;
+    text-align: center;
+    padding: 6% 0% 0%;
+}
+
+.propertytext {
+    font-size: 0.5cm;
+    font-weight: 400;
+    text-align: center;
+}
+
+.propertyrowtext {
+    text-align: center;
+    font-size: 0.4cm;
+    font-weight: 500;
+    padding: 1% 5% 0% 0%;
+}
+
+.backgroundimageforbanner {
+    background-image: url("/assets/images/addbpropftbgdt.png");
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.learnheadertext{
+    font-size: 0.9cm;
+    font-weight: 600;
+    padding: 6% 10% 0%;
+    text-align: left;
+}
+.learntext {
+    font-size: 0.5cm;
+    font-weight: 400;
+    padding: 6% 10% 0%;
+    text-align: left;
+}
+.icon {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding: 15% 0% 0%;
+    font-size: 20px;
+}
+a:link{
+    text-decoration: none!important;
+}
+.number{
+    color: black;
+    font-size: 25px;
+    padding: 15% 0% 0%;
+}
+
+.contactbackground{
+    background-image: url("/assets/images/contact.jpg");
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.contacttext{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10%;
+}
+
+.button30 {
+    padding: 14px 16px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #6053fc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #6053fc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+    min-height: 10px;
+    width: 100%;
+    outline: none;
+    
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    will-change: transform;
+}
+
+.button30:disabled {
+    pointer-events: none;
+}
+
+.button30:hover {
+    color: #fff;
+    background-color: #6053fc;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button30:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+.enquiry{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 15px;
+}
+.contact{
+    background-color: rgba(0,0,0,0.54);
+    color: white;
+}
+.row > *{
+    border-radius: 5px;
+}
