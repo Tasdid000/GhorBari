@@ -10,11 +10,11 @@ class UserAdmin(BaseUserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ["id","email", "name", "tc", "is_admin"]
+    list_display = ["id","email", "name", "phone_Number", "is_admin"]
     list_filter = ["is_admin"]
     fieldsets = [
         ('User Credentials', {"fields": ["email", "password"]}),
-        ("Personal info", {"fields": ["name", "tc"]}),
+        ("Personal info", {"fields": ["name", "phone_Number","image","address"]}),
         ("Permissions", {"fields": ["is_admin"]}),
     ]
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
@@ -24,7 +24,7 @@ class UserAdmin(BaseUserAdmin):
             None,
             {
                 "classes": ["wide"],
-                "fields": ["email", "name", "tc", "password1", "password2"],
+                "fields": ["email", "image","address","name", "phone_Number", "password1", "password2"],
             },
         ),
     ]
@@ -36,17 +36,46 @@ class UserAdmin(BaseUserAdmin):
 # Now register the new UserAdmin...
 admin.site.register(User, UserAdmin)
 
-class propertyadmin(admin.ModelAdmin):
-    list_display=["id", "property_Address", "rent_Amount"]
+class Propertyadmin(admin.ModelAdmin):
+    list_display=["Reference_number", "property_Address", "rent_Amount"]
     class Meta:
-        model = property
-admin.site.register(property, propertyadmin)
+        model = Property
+admin.site.register(Property, Propertyadmin)
 
 class Contactadmin(admin.ModelAdmin):
     list_display = ["id", "name", "Email"]
     class Meta:
         model = Contact
 admin.site.register(Contact, Contactadmin)
+class PropertyInfoadmin(admin.ModelAdmin):
+    list_display = ["propertyId", "name", "Email"]
+    class Meta:
+        model = PropertyInfo
+admin.site.register(PropertyInfo, PropertyInfoadmin)
+
+class ResidentialinteriorAdmin(admin.ModelAdmin):
+    list_display=["id", "name", 'Email']
+    class Meta:
+        model = Residentialinterior
+admin.site.register(Residentialinterior, ResidentialinteriorAdmin)
+
+class CommercialInterioradmin(admin.ModelAdmin):
+    list_display=["id", "name", 'Email']
+    class Meta:
+        model = CommercialInterior
+admin.site.register(CommercialInterior, CommercialInterioradmin)
+
+class ResidentialArchitectureAdmin(admin.ModelAdmin):
+    list_display=["id", "name", 'Email']
+    class Meta:
+        model = ResidentialArchitecture
+admin.site.register(ResidentialArchitecture, ResidentialArchitectureAdmin)
+
+class CommercialArchitectureadmin(admin.ModelAdmin):
+    list_display=["id", "name", 'Email']
+    class Meta:
+        model = CommercialArchitecture
+admin.site.register(CommercialArchitecture, CommercialArchitectureadmin)
 
 @admin.register(Post)
 class Postadmin(admin.ModelAdmin):
@@ -61,7 +90,38 @@ admin.site.register(Services, Servicesadmin)
 
 
 class ScheduleViewingadmin(admin.ModelAdmin):
-    list_display=["id", "property"]
+    list_display=["id", "Property"]
     class Meta:
         model = ScheduleViewing
 admin.site.register(ScheduleViewing, ScheduleViewingadmin)
+
+class Apply_For_Loanadmin(admin.ModelAdmin):
+    list_display=["id", "name", 'Email']
+    class Meta:
+        model = Apply_For_Loan
+admin.site.register(Apply_For_Loan, Apply_For_Loanadmin)
+
+class bank_detailsadmin(admin.ModelAdmin):
+    list_display=["id", "bank_name"]
+    class Meta:
+        model = bank_details
+admin.site.register(bank_details, bank_detailsadmin)
+
+class requestForAddPropertyadmin(admin.ModelAdmin):
+    list_display=["id", "name","phoneNumber"]
+    class Meta:
+        model = requestForAddProperty
+admin.site.register(requestForAddProperty, requestForAddPropertyadmin)
+
+# class cityadmin(admin.ModelAdmin):
+#     list_display=["city"]
+#     class Meta:
+#         model = city
+# admin.site.register(city, cityadmin)
+
+class notificationadmin(admin.ModelAdmin):
+    list_display=["Message"]
+    class Meta:
+        model = notification
+admin.site.register(notification, notificationadmin)
+

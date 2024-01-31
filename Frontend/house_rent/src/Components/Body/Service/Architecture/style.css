@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
 
-.backgroundimages{
+.backgroundimages {
     background-image: url("/assets/images/Architecture.jpeg");
     height: 80ch;
     width: 100%;
@@ -11,8 +11,9 @@
     margin-top: 5%;
     overflow-x: hidden;
 }
-.backgroundCommercialArchitecture{
-    background-image: url("/assets/images/commercialinterior.jpg");
+
+.backgroundCommercialArchitecture {
+    background-image: url("/assets/images/commercialArchitecturebanner.jpg");
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -23,18 +24,19 @@
     overflow-x: hidden;
 }
 
-.backgroundArchitecture{
-    background-image: url("/assets/images/Architecturedesign.jpeg");
+.backgroundResidentialArchitecture {
+    background-image: url("/assets/images/ResidentialArchitecturalbanner.jpg");
     height: 100%;
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
-    background-position: bottom center;
+    background-position: top center;
     border-radius: 5px;
     margin-top: 5%;
     overflow-x: hidden;
 }
-.textArchitecture{
+
+.textArchitecture {
     font-size: 30px;
     text-align: center;
     margin-top: 10ch;
@@ -57,7 +59,7 @@
     min-height: 10px;
     width: 13ch;
     outline: none;
-    
+
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -84,37 +86,61 @@
     transform: translateY(0);
 }
 
-.ResidentialArchitectureheadertext{
+.ResidentialArchitectureheadertext {
     padding-top: 6ch;
     text-align: left;
     font-size: 50px;
     line-height: 60px;
     font-weight: 500;
+    color: white;
 }
-.CommercialArchitectureheadertext{
+
+.CommercialArchitectureheadertext {
     padding-top: 6ch;
     font-size: 50px;
     line-height: 60px;
     font-weight: 500;
     color: #6053fc;
 }
-.ResidentialArchitecture{
+
+.ResidentialArchitecture {
     margin-left: 10%;
 }
-.CommercialArchitecture{
+
+.CommercialArchitecture {
     text-align: center;
 }
-.ResidentialArchitecturetext{
+
+.ResidentialArchitecturetext {
     font-size: 18px;
     padding-top: 2ch;
+    color: white;
 }
 
-.CommercialArchitecturetext{
+.CommercialArchitecturetext {
     font-size: 20px;
     padding-top: 2ch;
     font-weight: 500;
-    
+
 }
-.Residentialcontact{
+
+.Residentialcontact {
     width: 100%;
 }
+
+.image-slider-container {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.custom-carousel {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-carousel img {
+    max-height: 400px;
+    object-fit: cover;
+}
+

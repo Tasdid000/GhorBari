@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import {FormGroup, Row, Alert } from "reactstrap";
-import { Form, Control, Errors, actions } from 'react-redux-form'
+import { FormGroup, Row, Alert, Label, Col } from "reactstrap";
+import { Form, Control, Errors, actions, } from 'react-redux-form'
 import 'react-phone-input-2/lib/style.css'
 import axios from "axios";
 import { connect } from 'react-redux';
@@ -55,134 +55,122 @@ class Contact extends Component {
         //document.title = "Contact";
         return (
             <div className="contact">
-                <div className="shadow p-5">
+                <div className="container p-5">
                     <div className="" style={{}}>
                         <Alert isOpen={this.state.alertShow} color={this.state.alertType}>{this.state.alertText}</Alert>
                         <Form method="post" model="feedback" onSubmit={values => this.handleSubmit(values)}>
-                            <h1 className="contacttext">
-                                Request Info
-                            </h1>
-                                <FormGroup>
-                                    <Row>
-                                        <Control.text
-                                            model='.name'
-                                            name="name"
-                                            placeholder="Name*"
-                                            style={{ height: "40px" }}
-                                            validators={{
-                                                required
-                                            }}
-                                        />
-                                        <Errors
-                                            className="text-danger"
-                                            model=".name"
-                                            show="touched"
-                                            messages={
-                                                {
-                                                    required: "Name is required",
-                                                }
-                                            }
-                                        />
-                                    </Row>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Row>
-                                        <Control.text
-                                            model=".Email"
-                                            name="Email"
-                                            placeholder="Email*"
-                                            style={{ height: "40px" }}
-                                            validators={{
-                                                required,
-                                                validEmail
-                                            }}
-                                        />
-                                        <Errors
-                                            className="text-danger"
-                                            model=".Email"
-                                            show="touched"
-                                            messages={
-                                                {
-                                                    required: "We need your email address so we could contact you.",
-                                                }
-                                            }
-                                        />
-                                    </Row>
-                                </FormGroup>
-                            <Row>
-                                <FormGroup>
-                                    <Row>
-                                        <Control.text
-                                            model=".phone_Number"
-                                            name="phone_Number"
-                                            placeholder="Phone*"
-                                            style={{ height: "40px" }}
-                                            validators={{
-                                                required,
-                                                isNumber
-                                            }}
-                                        />
-                                        <Errors
-                                            className="text-danger"
-                                            model=".phone_Number"
-                                            show="touched"
-                                            messages={
-                                                {
-                                                    required: "Phone Number is required, so you can be contacted ",
-                                                }
-                                            }
-                                        />
-                                    </Row>
-                                </FormGroup>
-                                {/* <FormGroup>
-                                    <Row>
-                                        <Control.text
-                                            model=".Cell"
-                                            name="Cell"
-                                            placeholder="Cell"
-                                            style={{ height: "40px" }}
-                                            validators={{
-                                                required,
-                                                isNumber
-                                            }}
-                                        />
-                                    </Row>
-                                </FormGroup> */}
-
-                            </Row>
-                            <FormGroup>
-                                <Row>
-                                    <Control.textarea
-                                        model=".Message"
-                                        name="Message"
-                                        placeholder="Message*"
-                                        style={{ height: "100px", width: "1000px" }}
-                                        validators={
-                                            {
-                                                required
-                                            }
+                            <FormGroup className="input-box">
+                                <Label htmlfor="examplename" className="lbl">
+                                    Your Name <b style={{ color: "red", fontSize: "14px" }}>*</b>
+                                </Label>
+                                <Control.text
+                                    model='.name'
+                                    name="name"
+                                    className="input"
+                                    placeholder="Enter your name"
+                                    validators={{
+                                        required
+                                    }}
+                                />
+                                <Errors
+                                    className="text-danger"
+                                    model=".name"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "Name is required",
                                         }
-                                    />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".Message"
-                                        show="touched"
-                                        messages={
-                                            {
-                                                required: "A message is required to interact with the agent(s) "
-                                            }
+                                    }
+                                />
+                            </FormGroup>
+                            <FormGroup className="input-box">
+                                <Label htmlfor="exampleEmail" className="lbl">
+                                    Your Email <b style={{ color: "red", fontSize: "14px" }}>*</b>
+                                </Label>
+                                <Control.text
+                                    model=".Email"
+                                    name="Email"
+                                    placeholder="Enter your Email"
+                                    className="input"
+                                    validators={{
+                                        required,
+                                        validEmail
+                                    }}
+                                />
+                                <Errors
+                                    className="text-danger"
+                                    model=".Email"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "We need your email address so we could contact you.",
                                         }
-                                    />
-                                </Row>
+                                    }
+                                />
+                            </FormGroup>
+                            <FormGroup className="input-box">
+                                <Label htmlfor="examplephoneNumber" className="lbl">
+                                    Phone Number <b style={{ color: "red", fontSize: "14px" }}>*</b>
+                                </Label>
+                                <Control.text
+                                    model=".phone_Number"
+                                    name="phone_Number"
+                                    placeholder="Enter Phone Number"
+                                    className="input"
+                                    validators={{
+                                        required,
+                                        isNumber
+                                    }}
+                                />
+                                <Errors
+                                    className="text-danger"
+                                    model=".phone_Number"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "Phone Number is required, so you can be contacted ",
+                                        }
+                                    }
+                                />
+                            </FormGroup>
+                            <FormGroup className="input-box-message">
+                                <Label htmlfor="exampleMessage" className="lbl">
+                                    Message <b style={{ color: "red", fontSize: "14px" }}>*</b>
+                                </Label>
+                                <Control.textarea
+                                    model=".Message"
+                                    name="Message"
+                                    className="input-massage"
+                                    placeholder="Enter your Message"
+                                    validators={
+                                        {
+                                            required
+                                        }
+                                    }
+                                />
+                                <Errors
+                                    className="text-danger"
+                                    model=".Message"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "A message is required to interact with the agent(s) "
+                                        }
+                                    }
+                                />
                             </FormGroup><br />
                             <FormGroup>
-                                <a href="tel:01709882474" className="button30"><span className="callnow">Call Now</span></a>
-                            </FormGroup>
-                            <br />
-                            <FormGroup>
-                                <a href="/">
-                                    <button class="button30"> Submit</button>
-                                </a>
+                                <Row>
+                                    <Col md="6" style={{marginBottom:"5%"}}>
+                                        <a href="/">
+                                            <button class="button30"> Submit</button>
+                                        </a>
+                                    </Col>                                   
+                                    <Col md="6">
+                                    <a href="tel:01709882474" className="button30"><span className="callnow">Call Now</span></a>
+                                    </Col>
+                                </Row>
+
                                 <p className="enquiry">
                                     By sending an enquiry, you agree to our Terms of use.
                                 </p>

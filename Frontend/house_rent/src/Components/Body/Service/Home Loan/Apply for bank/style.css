@@ -1,0 +1,68 @@
+.input-box {
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 1px 19px 0px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 20px;
+    border: 2px solid #D8DADB;
+    height: 60px;
+}
+
+.input-box .lbl {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    color: black;
+}
+
+.input-box input[type="text"] {
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    border-color: white;
+    color: black;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.apply-form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 10px;
+}
+.text-danger{
+    font-size: 13px;
+}
+.input-massage{
+    height: 50px;
+    width: 100%;
+    border: none;
+}
+.input-box-message{
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 1px 19px 0px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 20px;
+    border: 2px solid #D8DADB;
+}
+.input-box-message .lbl {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    color: black;
+}
+.input-massage:focus {
+    outline: none;
+}

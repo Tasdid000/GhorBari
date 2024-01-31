@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './style.css';
 import CommercialInteriorContact from "./CommercialInteriorContact";
+import Interiorfaqans from "./FAQ/ans_and_que";
 class CommercialInterior extends Component {
     render() {
         return (
@@ -145,10 +148,38 @@ class CommercialInterior extends Component {
                             </Row>
                         </div>
                     </div>
-                    <div style={{ marginTop: "10ch" }}>
+                    <div className="container" style={{ marginTop: "10ch" }}>
                         <h2 style={{ textAlign: "center" }}>
                             GALLERY
                         </h2>
+                        <div className="image-slider-container">
+                            <Carousel
+                                showThumbs={false}
+                                infiniteLoop={true}
+                                showStatus={false}
+                                autoPlay={true}
+                                interval={5000}
+                                transitionTime={500}
+                                stopOnHover={false}
+                                showIndicators={false}
+                                showArrows={true}
+                                className="custom-carousel"
+                            >
+                                <div>
+                                    <img src='/assets/images/commercialinterior1.jpg' alt="Image 1" />
+                                </div>
+                                <div>
+                                    <img src='/assets/images/commercialinterior2.jpg' alt="Image 1" />
+
+                                </div>
+                                <div>
+                                    <img src='/assets/images/commercialinterior3.jpg' alt="Image 1" />
+                                </div>
+                                <div>
+                                    <img src='/assets/images/commercialinterior4.jpg' alt="Image 1" />
+                                </div>
+                            </Carousel>
+                        </div>
                     </div>
                     <div style={{ backgroundColor: "#0668e1", width: "100%", height: "auto", marginTop: "20ch", }}>
                         <h1 style={{ fontSize: "30px", textAlign: "center", paddingTop: "7%", paddingBottom: "0%", color: "white" }}>
@@ -181,6 +212,9 @@ class CommercialInterior extends Component {
                                 </Col>
                             </Row>
                         </div>
+                    </div>
+                    <div style={{marginTop:"5%"}}>
+                        <Interiorfaqans/>
                     </div>
                 </div>
             </div>

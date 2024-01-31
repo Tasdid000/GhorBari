@@ -1,18 +1,23 @@
 import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './style.css';
+import ResidentialArchitectureContact from "./ResidentialArchitectureContact";
+import Architecturefaqans from "./FAQ/ans_and_que";
 class ResidentialArchitecture extends Component {
     render() {
+
         return (
             <div>
-                <div className="backgroundArchitecture">
+                <div className="backgroundResidentialArchitecture">
                     <Row>
-                        <Col md="4" className="ResidentialArchitecture">
+                        <Col md="5" className="ResidentialArchitecture">
                             <h1 className="ResidentialArchitectureheadertext">
-                                Crafting a Homes for Unforgettable Memories
+                                Your Dream Homes Await
                             </h1>
                             <p className="ResidentialArchitecturetext">
-                                Transform Your Vision into Reality <br />Contact Us to Create Your Dream Home
+                                Crafting Your Vision into Architectural Brilliance
                             </p>
                         </Col>
                     </Row>
@@ -90,11 +95,38 @@ class ResidentialArchitecture extends Component {
                                 </Row>
                             </div>
                         </div>
-                        <div style={{ marginTop: "10ch" }}>
+                        <div className="container" style={{ marginTop: "10ch" }}>
                             <h2 style={{ textAlign: "center" }}>
                                 GALLERY
                             </h2>
-                           
+                            <div className="image-slider-container">
+                                <Carousel
+                                    showThumbs={false}
+                                    infiniteLoop={true}
+                                    showStatus={false}
+                                    autoPlay={true}
+                                    interval={5000}
+                                    transitionTime={500}
+                                    stopOnHover={false}
+                                    showIndicators={false}
+                                    showArrows={true}
+                                    className="custom-carousel"
+                                >
+                                    <div>
+                                        <img src='/assets/images/residentialArchitecture1.jpg' alt="Image 1" />
+                                    </div>
+                                    <div>
+                                        <img src='/assets/images/residentialArchitecture2.jpg' alt="Image 1" />
+
+                                    </div>
+                                    <div>
+                                        <img src='/assets/images/residentialArchitecture3.jpg' alt="Image 1" />
+                                    </div>
+                                    <div>
+                                        <img src='/assets/images/residentialArchitecture4.jpg' alt="Image 1" />
+                                    </div>
+                                </Carousel>
+                            </div>
                         </div>
                         <div style={{ backgroundColor: "#0668e1", width: "100%", height: "auto", marginTop: "20ch", }}>
                             <h1 style={{ fontSize: "30px", textAlign: "center", paddingTop: "7%", paddingBottom: "0%", color: "white" }}>
@@ -108,7 +140,7 @@ class ResidentialArchitecture extends Component {
                             <h1 style={{ fontSize: "30px", marginTop: "5ch", marginBottom: "5ch" }}>
                                 Send us a message and we will contact you back
                             </h1>
-                            {/* <ResidentialArchitectureContact /> */}
+                            <ResidentialArchitectureContact />
                         </div>
                         <div className="container">
                             <div className="backgroundimageforbanner">
@@ -127,6 +159,9 @@ class ResidentialArchitecture extends Component {
                                     </Col>
                                 </Row>
                             </div>
+                        </div>
+                        <div style={{ marginTop: "5%" }}>
+                            <Architecturefaqans/>
                         </div>
                     </div>
                 </div>

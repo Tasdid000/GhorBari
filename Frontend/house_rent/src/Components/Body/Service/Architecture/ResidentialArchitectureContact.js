@@ -4,14 +4,14 @@ import { Form, Control, Errors, actions } from 'react-redux-form'
 import 'react-phone-input-2/lib/style.css'
 import axios from "axios";
 import { connect } from 'react-redux';
-import { baseUrl2 } from '../../../../redux/baseUrl'
+import { baseUrl6 } from '../../../../redux/baseUrl'
 import "./style.css"
 
 
 const mapDispatchToProps = dispatch => {
     return {
         resetFeedbackForm: () => {
-            dispatch(actions.reset('feedback'))
+            dispatch(actions.reset('ResidentialArchitectureContact'))
         }
     }
 }
@@ -21,7 +21,7 @@ const required = val => val && val.length;
 const isNumber = val => !isNaN(Number(val));
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-class ResidentialInteriorContact extends Component {
+class ResidentialArchitectureContact extends Component {
     state = {
         alertShow: false,
         alertText: null,
@@ -29,7 +29,7 @@ class ResidentialInteriorContact extends Component {
     }
     handleSubmit = values => {
         //console.log(values);
-        axios.post(baseUrl2 + "feedback", values)
+        axios.post(baseUrl6 + "ResidentialArchitectureContact", values)
             .then(response => response.status)
             .then(status => {
                 if (status === 201) {
@@ -58,11 +58,11 @@ class ResidentialInteriorContact extends Component {
                 <div className="container">
                     <div className="" style={{}}>
                         <Alert isOpen={this.state.alertShow} color={this.state.alertType}>{this.state.alertText}</Alert>
-                        <Form method="post" model="feedback" onSubmit={values => this.handleSubmit(values)}>
+                        <Form method="post" model="ResidentialArchitectureContact" onSubmit={values => this.handleSubmit(values)}>
                             <FormGroup>
                                 <Row>
                                     <Col md="4">
-                                        <Label htmlfor="exampleYour Name" style={{ fontSize: "20px" }}>
+                                        <Label htmlfor="examplename" style={{ fontSize: "20px" }}>
                                             Your Name <b style={{ color: "red", fontSize: "14px" }}>*</b>
                                         </Label>
                                     </Col>
@@ -158,7 +158,7 @@ class ResidentialInteriorContact extends Component {
                             <FormGroup>
                                 <Row>
                                     <Col md="4">
-                                        <Label htmlfor="examplearea" style={{ fontSize: "20px" }}>
+                                        <Label htmlfor="examplefloor_Area" style={{ fontSize: "20px" }}>
                                             Floor Area (Optional)
                                         </Label>
                                     </Col>
@@ -175,13 +175,12 @@ class ResidentialInteriorContact extends Component {
                             <FormGroup>
                                 <Row>
                                     <Col md="4">
-                                        <Label htmlfor="exampleMessage" style={{ fontSize: "20px" }}>
+                                        <Label htmlfor="exampleideas" style={{ fontSize: "20px" }}>
                                             Feel Free to Share Your Ideas <b style={{ color: "red", fontSize: "14px" }}>*</b>
                                         </Label>
                                     </Col>
                                     <Col md="6">
                                         <Control.textarea
-
                                             model=".ideas"
                                             name="ideas"
                                             className="Residentialcontact"
@@ -207,7 +206,7 @@ class ResidentialInteriorContact extends Component {
                                 </Row>
                             </FormGroup>
                             <FormGroup>
-                                <Row style={{marginTop:"3ch"}}>
+                                <Row style={{ marginTop: "3ch" }}>
                                     <Col md="4">
                                     </Col>
                                     <Col md="6">
@@ -225,4 +224,4 @@ class ResidentialInteriorContact extends Component {
         );
     }
 }
-export default connect(null, mapDispatchToProps)(ResidentialInteriorContact);
+export default connect(null, mapDispatchToProps)(ResidentialArchitectureContact);

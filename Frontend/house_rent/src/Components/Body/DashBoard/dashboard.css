@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f3fb;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.left-sidebar {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7%;
+}
+
+.sidebar-item {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.sidebar-item:hover {
+  background-color: #6053fc;
+  color: white;
+}
+
+.sidebar-item.active {
+  background-color: #6053fc;
+  color: white;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 3%;
+}
+
+.dashboard-container {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.requestcard {
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  margin: 30px auto;
+  padding: 10px;
+  padding-bottom: 10px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+
+.propertyhader {
+  border: 1px solid !important;
+  padding: 10px 10px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.propertytexts {
+  border: 1px solid !important;
+  border-radius: 15px;
+  padding-top: 10px;
+}
+
+/* Add this to your stylesheet */
+
+.requestcard-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.requestcard {
+  background: #fff;
+  border-radius: 8px;
+  max-height: 80vh;
+  overflow-y: auto;
+  max-width: 60ch;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.scrollable-card-content {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.profileiamge {
+  border-radius: 40px;
+  border: 4px solid #6053fc;
+  padding: 3px;
+  width: 50%;
+}
+
+.profiletext {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: start;
+  border: 2px solid #D8DADB;
+  padding: 5px 20px 2px;
+  border-radius: 16px;
+}
+
+.profileCard {
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  border-radius: 15px;
+  /* padding: 0% 10% 10%; */
+}
+
+.profile {
+  padding: 0% 10% 10%;
+}
+
+.general {
+  background: #f7f7f7;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  border-radius: 15px;
+  padding: 5%;
+}
+
+.input-box {
+  background-color: #ffffff;
+  border-radius: 7px;
+  padding: 1px 19px 0px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 20px;
+  border: 2px solid #D8DADB;
+  height: 60px;
+}
+
+.input-box .lbl {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+  color: black;
+}
+
+.input-box input[type="email"] {
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 14px;
+  border-color: white;
+  color: black;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.buttonimagecard {
+  background: #6053fc;
+  padding: 10px 12px;
+  appearance: none;
+  border: none;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  min-height: auto;
+  width: 100%;
+  outline: 0;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.buttonimagecard:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  border: 2px solid #6053fc;
+  border-radius: 6px;
+}
+
+.buttonimagecard:hover,
+.buttonimagecard:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #6053fc;
+}
+
+.buttonimagecard:active {
+  opacity: .5;
+}
+
+
+.buttonuser {
+  padding: 10px 12px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #6053fc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #6053fc;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  min-height: 10px;
+  width: auto;
+  outline: none;
+
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  will-change: transform;
+}
+
+.buttonuser:disabled {
+  pointer-events: none;
+}
+
+.buttonuser:hover {
+  color: #fff;
+  background-color: #6053fc;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.buttonuser:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* dashboard.css */
+
+.property-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 16%;
+}
+
+.property-table th,
+.property-table td {
+  /* border: 1px solid #6053fc; */
+  padding: 8px;
+  text-align: left;
+}
+
+/* .property-table th {
+  border-radius: 15px;
+} */
+
+.property-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* .property-table tr:hover {
+  background-color: #ddd;
+} */
+
+.propertytablecard {
+  background: #f7f7f7;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  border-radius: 15px;
+}
+
+/* Add this to your dashboard.css file */
+
+.notification-container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.notification-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+}
+
+.notification-header {
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid #6053fc;
+}
+
+.notification-body {
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 1px solid #6053fc;
+  border-left: 1px solid #6053fc;
+  border-right: 1px solid #6053fc;
+}
+
+.notification-item:hover .notification-body {
+  display: block;
+}
+
+@media not screen and (min-width: 992px) {
+  .left-sidebar {
+    padding-top: 30%;
+  }
+
+}

@@ -1,0 +1,15 @@
+.footer {
+    background: #212529;
+    margin-top: 10%;
+    background-image: url('/assets/images/ssscribble.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.footeremail{
+    color: white;
+    font-size: 15px;
+}
+.footeremail:hover{
+    color: white;
+}

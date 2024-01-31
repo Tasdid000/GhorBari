@@ -1,0 +1,36 @@
+.faq-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.faq-icon::before {
+    content: '+';
+    font-size: 20px;
+}
+
+.faq-icon.open::before {
+    content: '-';
+    font-size: 20px;
+}
+
+.faq-answer {
+    padding: 10px;
+    background-color: #fff;
+}

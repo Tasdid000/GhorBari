@@ -1,0 +1,77 @@
+.td {
+    padding: 10px 3px;
+    font-size: 15px;
+}
+
+.card-containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust the gap between cards */
+}
+
+.cardallbank {
+    width: calc(33.33% - 1rem);
+    position: relative;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    height: 420px;
+}
+
+.card-body {
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 1rem);
+    }
+}
+
+.button41 {
+    margin-bottom: 0%;
+    background: #6053fc;
+    padding: 14px 16px;
+    appearance: none;
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+    min-height: 50px;
+    width: auto;
+    outline: 0;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 10px; /* Adjust button position from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button41:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    border: 2px solid #6053fc;
+    border-radius: 6px;
+}
+
+.button41:hover,
+.button41:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #6053fc;
+}
+
+.button41:active {
+    opacity: .5;
+}

@@ -1,0 +1,145 @@
+.homeloanbackground {
+    background-image: url("/assets/images/homeloanbanner.jpg");
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    margin-top: 5%;
+    background-attachment: fixed;
+}
+
+.homeloantext {
+    font-size: 20px;
+    color: white;
+}
+
+.homeloan {
+    margin-left: 10%;
+}
+
+.button33 {
+    padding: 14px 16px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #6053fc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #6053fc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+    min-height: 10px;
+    width: auto;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    will-change: transform;
+}
+
+.button33:disabled {
+    pointer-events: none;
+}
+
+.button33:hover {
+    color: #fff;
+    background-color: #6053fc;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button33:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.homeloanheadertext {
+    padding-top: 6ch;
+    text-align: left;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #6053fc;
+}
+
+.button40 {
+    background: #6053fc;
+    padding: 14px 16px;
+    appearance: none;
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+    min-height: 50px;
+    width: auto;
+    outline: 0;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.button40:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    border: 2px solid #6053fc;
+    border-radius: 6px;
+}
+
+.button40:hover,
+.button40:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #6053fc;
+}
+
+.button40:active {
+    opacity: .5;
+}
+
+.card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.cardforbank {
+    background-color: white;
+    width: 70%;
+    max-width: 450px;
+    border-radius: 8px;
+    position: relative;
+    height: auto;
+
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}

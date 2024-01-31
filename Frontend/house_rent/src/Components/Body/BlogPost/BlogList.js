@@ -1,57 +1,88 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardBody, CardHeader, CardImg, CardText, Row, Col } from 'reactstrap';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
+const Bloglist = () => {
+    const [blogs, setBlogs] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
+    useEffect(() => {
+        // Fetch blog data from the API
+        axios.get('http://127.0.0.1:8000/apiv1/user/Post/')
+            .then(response => {
+                setBlogs(response.data);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('Error fetching blog data:', error);
+                setError('Error fetching blog data. Please try again later.');
+                setLoading(false);
+            });
+    }, []);
 
-const Bloglist = props => {
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
+
     return (
         <div className='container mx-6' style={{ msOverflowX: "hidden", marginTop: "10%" }}>
             <Row>
-                <Col md="9">
-                    <Card style={{ border: "none" }}>
-                        <CardBody>
-                            <Row>
-                                <Col md="5">
-                                    <CardImg
-                                        src={props.Blog.image}
-                                        alt={props.Blog.title}
-                                    />
-                                </Col>
-                                <Col md="7">
-                                    <CardText style={{ fontSize: "14px" }}>
-                                        <p>
-                                            {/* <span style={{ marginRight: "10px" }}>
-                                                {props.Blog.category} --
-                                            </span> */}
-                                            {/* <span>
-                                                {props.Blog.TimeStamp}
-                                            </span> */}
-
-                                        </p>
-                                    </CardText>
-                                    <CardHeader
-                                        onClick={props.BlogSelect} style={{
-                                            border: "none", backgroundColor: "white", fontSize: "25px", textAlign: "left", color: "#0668E1", cursor: "pointer", padding: "0%"
-                                        }}>
-                                        {props.Blog.title}
-                                    </CardHeader>
-                                    <CardText>
-                                        <span>
-                                            {props.Blog.TimeStamp}
-                                        </span>
-                                    </CardText>
-                                    <CardText style={{ marginTop: "30px", fontSize: "15px" }}>
-                                        {props.Blog.desc}...
-                                    </CardText>
-                                </Col>
-                            </Row>
-                        </CardBody>
-                    </Card>
-                    <hr />
-                </Col>
+                {blogs.map(blog => (
+                    <Col md="9" key={blog.id}>
+                        <Card style={{ border: "none" }}>
+                            <CardBody>
+                                <Row>
+                                    <Col md="5">
+                                        <CardImg
+                                            src={blog.image}
+                                            alt={blog.title}
+                                        />
+                                    </Col>
+                                    <Col md="7">
+                                        <CardText style={{ fontSize: "14px" }}>
+                                            <p>
+                                                {/* Add category and timestamp if needed */}
+                                            </p>
+                                        </CardText>
+                                        <CardHeader
+                                            tag={Link}
+                                            to={`/blog/${blog.id}`} // Assuming each blog has an 'id' property
+                                            style={{
+                                                border: "none",
+                                                backgroundColor: "white",
+                                                fontSize: "25px",
+                                                textAlign: "left",
+                                                color: "#0668E1",
+                                                cursor: "pointer",
+                                                padding: "0%"
+                                            }}
+                                        >
+                                            {blog.title}
+                                        </CardHeader>
+                                        <CardText>
+                                            <span>
+                                                {blog.TimeStamp}
+                                            </span>
+                                        </CardText>
+                                        <CardText style={{ marginTop: "30px", fontSize: "15px" }}>
+                                            {blog.desc}...
+                                        </CardText>
+                                    </Col>
+                                </Row>
+                            </CardBody>
+                        </Card>
+                        <hr />
+                    </Col>
+                ))}
                 <Col md="3">
                     <Row>
-                        <Col style={{textAlign:"center"}}>
+                        <Col style={{ textAlign: "center" }}>
                             <a href='https://www.facebook.com'>
                                 <i class="fa-brands fa-facebook" style={{ fontSize: "35px", color: "#33579e", marginRight: "5%" }}></i>
                             </a>
@@ -72,7 +103,6 @@ const Bloglist = props => {
                 </Col>
             </Row>
         </div>
-
     );
 }
 
