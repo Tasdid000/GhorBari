@@ -3,28 +3,77 @@ from .models import *
 from django.utils.encoding import smart_str, force_bytes, DjangoUnicodeDecodeError
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
+from django.utils.encoding import force_bytes, force_text
 from .utils import Util
-
-
+from rest_framework.exceptions import AuthenticationFailed
+import secrets
 class UserRegistrationSerializer(serializers.ModelSerializer):
-    password2 = serializers.CharField(
-        style={"input_type": "password"}, write_only=True)
+    password2 = serializers.CharField(style={"input_type": "password"}, write_only=True)
+    verification_code = serializers.CharField(write_only=True, required=False)
 
     class Meta:
         model = User
-        fields = ["email", "name", "phone_Number", "password", "password2"]
+        fields = ["email", "name", "phone_Number", "password", "password2", "verification_code"]
         extra_kwargs = {"password": {"write_only": True}}
 
     def validate(self, attrs):
         password = attrs.get("password", "")
         password2 = attrs.get("password2", "")
         if password != password2:
-            raise serializers.ValidationError(
-                {"password": "Passwords must match"})
+            raise serializers.ValidationError({"password": "Passwords must match"})
         return attrs
 
     def create(self, validated_data):
-        return User.objects.create_user(**validated_data)
+        verification_code = validated_data.pop("verification_code", None)
+        if not verification_code:
+            verification_code = str(secrets.randbelow(10**6)).zfill(6)
+
+        user = User.objects.create_user(**validated_data)
+        user.set_password(validated_data["password"])
+        user.is_active = False
+        user.verification_code = verification_code
+        user.save()
+
+        data = {
+            "subject": "Email Verification",
+            "body": f"Your verification code is: {verification_code}",
+            "to_email": validated_data["email"],
+        }
+        Util.send_email(data)
+
+        return user
+
+
+
+# class UserRegistrationSerializer(serializers.ModelSerializer):
+#     password2 = serializers.CharField(
+#         style={"input_type": "password"}, write_only=True)
+
+#     class Meta:
+#         model = User
+#         fields = ["email", "name", "phone_Number", "password", "password2"]
+#         extra_kwargs = {"password": {"write_only": True}}
+
+#     def validate(self, attrs):
+#         password = attrs.get("password", "")
+#         password2 = attrs.get("password2", "")
+#         if password != password2:
+#             raise serializers.ValidationError(
+#                 {"password": "Passwords must match"})
+#         return attrs
+
+#     def create(self, validated_data):
+#         return User.objects.create_user(**validated_data)
+    
+
+
+
+class VerifyEmailSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    verification_code = serializers.CharField()
+
+class ResendVerificationEmailSerializer(serializers.Serializer):
+    email = serializers.EmailField()
 
 
 class UserLoginSerializer(serializers.ModelSerializer):
@@ -34,11 +83,10 @@ class UserLoginSerializer(serializers.ModelSerializer):
         model = User
         fields = ["email", "password"]
 
-
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["id", "email", "name", "image", "phone_Number", 'address']
+        fields = ["email", "name", "image", "phone_Number", 'address']
 
 class UpdateUserSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(required=False)
@@ -97,11 +145,11 @@ class SendPasswordResetEmailSerializer(serializers.Serializer):
     email = attrs.get('email')
     if User.objects.filter(email=email).exists():
       user = User.objects.get(email = email)
-      uid = urlsafe_base64_encode(force_bytes(user.id))
-      print('Encoded UID', uid)
+      email = urlsafe_base64_encode(force_bytes(user.pk))
+      print('Encoded UID', email)
       token = PasswordResetTokenGenerator().make_token(user)
-      print('Password Reset Token', token)
-      link = 'http://localhost:3000/apiv1/user/reset/'+uid+'/'+token
+      print('Password Reset Token', token)      
+      link = f'http://localhost:3000/apiv1/user/reset/{email}/{token}'
       print('Password Reset Link', link)
       # Send EMail
       body = 'Click Following Link to Reset Your Password '+link
@@ -125,12 +173,12 @@ class UserPasswordResetSerializer(serializers.Serializer):
     try:
       password = attrs.get('password')
       password2 = attrs.get('password2')
-      uid = self.context.get('uid')
+      email = self.context.get('email')
       token = self.context.get('token')
       if password != password2:
         raise serializers.ValidationError("Password and Confirm Password doesn't match")
-      id = smart_str(urlsafe_base64_decode(uid))
-      user = User.objects.get(id=id)
+      uid = force_text(urlsafe_base64_decode(email))
+      user = User.objects.get(pk=uid)
       if not PasswordResetTokenGenerator().check_token(user, token):
         raise serializers.ValidationError('Token is not Valid or Expired')
       user.set_password(password)
@@ -155,7 +203,7 @@ class Contactserializers(serializers.ModelSerializer):
 class PropertyInfoserializers(serializers.ModelSerializer):
     class Meta:
         model = PropertyInfo
-        fields = ["propertyId", "name","Email","phone_Number","Message"]
+        fields = "__all__"
 
 class Postserializers(serializers.ModelSerializer):
     class Meta:
@@ -164,8 +212,8 @@ class Postserializers(serializers.ModelSerializer):
 
 class Servicesserializers(serializers.ModelSerializer):
     class Meta:
-       model= Services
-       fields = ["id","image","employee_Name","email","mobile_Number","experience"]
+       model= Service
+       fields = ["id","image","employee_Name", "experience", 'Services']
 
 class ScheduleViewingserializers(serializers.ModelSerializer):
     class Meta:
@@ -217,5 +265,17 @@ class notificationserializers(serializers.ModelSerializer):
     class Meta:
        model= notification
        fields = "__all__"
+#JobOpening
+
+class ApplyJobserializers(serializers.ModelSerializer):
+    class Meta:
+        model = ApplyJob
+        fields = "__all__"
+
+class JobOpeningserializers(serializers.ModelSerializer):
+    class Meta:
+       model= JobOpening
+       fields = "__all__"
+
 
 

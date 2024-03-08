@@ -1,0 +1,45 @@
+@keyframes borderColorAnimation {
+    0% {
+        border-color: #6053fc;
+        /* Initial border color */
+    }
+
+    50% {
+        border-color: #343a40;
+        /* Midway border color */
+    }
+
+    100% {
+        border-color: #3498db;
+        /* Final border color */
+    }
+}
+
+.employeecard {
+    border: 2px solid #6053fc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    animation: borderColorAnimation 2s infinite;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 16px;
+    grid-template-rows: 210px 250px 20px;
+    text-align: justify;
+}
+
+.circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border: 1px solid #6053fc;
+    height: 100px;
+    width: 100px;
+    animation: borderColorAnimation 2s infinite;
+}
+
+.card-body {
+    padding: 11% 5% 6% 10%;
+}

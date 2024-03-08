@@ -1,0 +1,48 @@
+.customerss {
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.customersscard {
+    padding: 11% 5% 6% 10%;
+}
+
+.award {
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 16px;
+    background: #f8f7f5;
+}
+
+.awardcard {
+    padding: 11% 5% 6% 10%;
+}
+
+.PropertyCollections {
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 16px;
+    background: #f1efed;
+}
+
+.PropertyCollectionscard {
+    padding: 11% 5% 6% 10%;
+}
+
+.experience {
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+}
+
+.experiencecard {
+    padding: 11% 5% 6% 10%;
+}
+
+.card-body {
+    padding: 11% 5% 6% 10%;
+}

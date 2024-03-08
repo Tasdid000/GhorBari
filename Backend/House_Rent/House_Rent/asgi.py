@@ -14,3 +14,16 @@ from django.core.asgi import get_asgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'House_Rent.settings')
 
 application = get_asgi_application()
+
+
+# import os
+# from django.core.asgi import get_asgi_application
+# from channels.routing import ProtocolTypeRouter, URLRouter
+# from chatapp.routing import websocket_urlpatterns
+
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'House_Rent.settings')
+
+# application = ProtocolTypeRouter({
+#     "http": get_asgi_application(),
+#     "websocket": URLRouter(websocket_urlpatterns),
+# })

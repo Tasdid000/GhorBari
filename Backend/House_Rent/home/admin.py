@@ -10,12 +10,12 @@ class UserAdmin(BaseUserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ["id","email", "name", "phone_Number", "is_admin"]
+    list_display = ["email", "name", "phone_Number", "is_admin"]
     list_filter = ["is_admin"]
     fieldsets = [
         ('User Credentials', {"fields": ["email", "password"]}),
         ("Personal info", {"fields": ["name", "phone_Number","image","address"]}),
-        ("Permissions", {"fields": ["is_admin"]}),
+        ("Permissions", {"fields": ["is_admin", "is_active", "email_verified"]}),
     ]
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
     # overrides get_fieldsets to use this attribute when creating a user.
@@ -29,7 +29,7 @@ class UserAdmin(BaseUserAdmin):
         ),
     ]
     search_fields = ["email"]
-    ordering = ["email", "id"]
+    ordering = ["email", "name", "phone_Number"]
     filter_horizontal = []
 
 
@@ -47,11 +47,13 @@ class Contactadmin(admin.ModelAdmin):
     class Meta:
         model = Contact
 admin.site.register(Contact, Contactadmin)
+
 class PropertyInfoadmin(admin.ModelAdmin):
     list_display = ["propertyId", "name", "Email"]
     class Meta:
         model = PropertyInfo
 admin.site.register(PropertyInfo, PropertyInfoadmin)
+
 
 class ResidentialinteriorAdmin(admin.ModelAdmin):
     list_display=["id", "name", 'Email']
@@ -83,10 +85,10 @@ class Postadmin(admin.ModelAdmin):
         js = ('tiny.js',)
 
 class Servicesadmin(admin.ModelAdmin):
-    list_display=["id", "employee_Name", "email"]
+    list_display=["id", "employee_Name", 'experience', 'Services']
     class Meta:
-        model = Services
-admin.site.register(Services, Servicesadmin)
+        model = Service
+admin.site.register(Service, Servicesadmin)
 
 
 class ScheduleViewingadmin(admin.ModelAdmin):
@@ -120,8 +122,28 @@ admin.site.register(requestForAddProperty, requestForAddPropertyadmin)
 # admin.site.register(city, cityadmin)
 
 class notificationadmin(admin.ModelAdmin):
-    list_display=["Message"]
+    list_display=["id","Message"]
     class Meta:
         model = notification
 admin.site.register(notification, notificationadmin)
+
+class ApplyJobadmin(admin.ModelAdmin):
+    list_display = ["id", "Name", "Email"]
+    class Meta:
+        model = ApplyJob
+admin.site.register(ApplyJob, ApplyJobadmin)
+
+
+class JobOpeningadmin(admin.ModelAdmin):
+    list_display=['JobTitle','JobSchedule','Deadline']
+    class Meta:
+        model = JobOpening
+admin.site.register(JobOpening, JobOpeningadmin)
+
+
+# class ChatMessageadmin(admin.ModelAdmin):
+#     list_display = ["user", "message"]
+#     class Meta:
+#         model = ChatMessage
+# admin.site.register(ChatMessage, ChatMessageadmin)
 

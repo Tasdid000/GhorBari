@@ -1,0 +1,54 @@
+@keyframes borderColorAnimation {
+    0% {
+        border-color: #6053fc;
+        /* Initial border color */
+    }
+
+    50% {
+        border-color: #343a40;
+        /* Midway border color */
+    }
+
+    100% {
+        border-color: #3498db;
+        /* Final border color */
+    }
+}
+
+.testimonial-card {
+    border: 5px solid #6053fc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    animation: borderColorAnimation 2s infinite;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 16px;
+    grid-template-rows: 210px 250px 20px;
+    text-align: justify;
+    height: 450px;
+}
+
+.testimonialcircular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border: 2px solid #6053fc;
+    height: 70px;
+    width: 70px;
+    animation: borderColorAnimation 2s infinite;
+}
+.testimonialicon{
+    font-size: 30px;
+    color: #6053fc;
+}
+.Bloglistforaddpropertycard{
+    border-radius: 16px;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+.card-body{
+    padding: auto;
+}

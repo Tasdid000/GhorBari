@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    # 'chatapp',
+    # 'channels',
     'rest_framework_simplejwt',
 ]
 
@@ -74,8 +76,8 @@ SIMPLE_JWT = {
 
     "AUTH_HEADER_TYPES": ("Bearer",),
     "AUTH_HEADER_NAME": "HTTP_AUTHORIZATION",
-    "USER_ID_FIELD": "id",
-    "USER_ID_CLAIM": "user_id",
+    "USER_ID_FIELD": "email",
+    "USER_ID_CLAIM": "user_email",
     "USER_AUTHENTICATION_RULE": "rest_framework_simplejwt.authentication.default_user_authentication_rule",
 
     "AUTH_TOKEN_CLASSES": ("rest_framework_simplejwt.tokens.AccessToken",),
@@ -122,7 +124,7 @@ WSGI_APPLICATION = 'House_Rent.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'houserent',
+        'NAME': 'houserents',
         'HOST': 'localhost',
         'PASSWORD': '',
         'USER': 'root',
@@ -150,6 +152,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 AUTH_USER_MODEL = 'home.User'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# ASGI_APPLICATION = 'House_Rent.asgi.application'
 
 customColorPalette = [
     {"color": "hsl(4, 90%, 58%)", "label": "Red"},

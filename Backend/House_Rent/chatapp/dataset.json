@@ -1,0 +1,1487 @@
+[
+    {
+        "user": [
+            "hi, how are you doing?",
+            "Hi there!",
+            "Hello!",
+            "Hi",
+            "hello"
+        ],
+        "bot": [
+            "Hi there!",
+            "Hello!",
+            "Greetings!"
+        ]
+    },
+    {
+        "user": "i'm fine. how about yourself?",
+        "bot": [
+            "I am fine, thank you!",
+            "Good, how about you?",
+            "I'm a bot, I don't have feelings."
+        ]
+    },
+    {
+        "user": "i'm pretty good. thanks for asking.",
+        "bot": [
+            "Glad to hear that!",
+            "That's great!",
+            "You're welcome!"
+        ]
+    },
+    {
+        "user": "no problem. so how have you been?",
+        "bot": [
+            "I've been great. What about you?",
+            "I've been good. How about yourself?",
+            "Things have been good for me."
+        ]
+    },
+    {
+        "user": "i've been good. i'm in school right now.",
+        "bot": [
+            "What school do you go to?",
+            "I go to PCC.",
+            "Do you like it there?",
+            "It's okay. It's a really big campus.",
+            "Good luck with school.",
+            "Thank you very much."
+        ]
+    },
+    {
+        "user": "how's it going?",
+        "bot": [
+            "I'm doing well. How about you?",
+            "Never better, thanks.",
+            "So how have you been lately?",
+            "I've actually been pretty good. You?",
+            "I'm actually in school right now.",
+            "Which school do you attend?",
+            "I'm attending PCC right now.",
+            "Are you enjoying it there?",
+            "It's not bad. There are a lot of people there.",
+            "Good luck with that.",
+            "Thanks.",
+            "How are you doing today?",
+            "I'm doing great. What about you?",
+            "I'm absolutely lovely, thank you.",
+            "Everything's been good with you?"
+        ]
+    },
+    {
+        "user": "everything's been good with you?",
+        "bot": [
+            "I haven't been better. How about yourself?",
+            "I've been good. I'm in school right now.",
+            "Which school do you attend?",
+            "I'm attending PCC right now.",
+            "Are you enjoying it there?",
+            "It's not bad. There are a lot of people there.",
+            "Good luck with that.",
+            "Thanks."
+        ]
+    },
+    {
+        "user": "it's an ugly day today.",
+        "bot": [
+            "I know. I think it may rain.",
+            "It's the middle of summer, it shouldn't rain today.",
+            "That would be weird.",
+            "Yeah, especially since it's ninety degrees outside.",
+            "I know, it would be horrible if it rained and it was hot outside.",
+            "Yes, it would be."
+        ]
+    },
+    {
+        "user": "i really wish it wasn't so hot every day.",
+        "bot": [
+            "Me too. I can't wait until winter.",
+            "I like winter too, but sometimes it gets too cold.",
+            "I'd rather be cold than hot.",
+            "Me too."
+        ]
+    },
+    {
+        "user": "it doesn't look very nice outside today.",
+        "bot": [
+            "You're right. I think it's going to rain later.",
+            "In the middle of the summer, it shouldn't be raining.",
+            "That wouldn't seem right.",
+            "Considering that it's over ninety degrees outside, that would be weird.",
+            "Exactly, it wouldn't be nice if it started raining. It's too hot.",
+            "I know, you're absolutely right.",
+            "I wish it would cool off one day."
+        ]
+    },
+    {
+        "user": "i really want it to rain today.",
+        "bot": [
+            "Yeah, so do I.",
+            "Isn't it a nice day?",
+            "Yes, I think so too.",
+            "It looks like it may rain soon.",
+            "Hopefully it will.",
+            "I really love how rain clears the air.",
+            "Me too. It always smells so fresh after it rains.",
+            "I especially love the night air when it rains.",
+            "Really? Why is it?",
+            "Because you can see the stars perfectly.",
+            "I really hope it rains today.",
+            "Yeah, me too."
+        ]
+    },
+    {
+        "user": "isn't it a nice day?",
+        "bot": [
+            "It really is.",
+            "It seems that it may rain today.",
+            "Hopefully it will.",
+            "How come?",
+            "I like how clear the sky gets after it rains.",
+            "I feel the same way. It smells so good after it rains.",
+            "I especially love the night air when it rains.",
+            "Really? Why?",
+            "The stars look so much closer after it rains.",
+            "I really want it to rain today.",
+            "Yeah, so do I."
+        ]
+    },
+    {
+        "user": "don't you think it's nice out?",
+        "bot": [
+            "Yes, I think so too.",
+            "I think that it's going to rain.",
+            "I hope that it does.",
+            "Why is that?",
+            "I really love how rain clears the air.",
+            "Me too. It always smells so fresh after it rains.",
+            "I especially love the night air when it rains.",
+            "Really? Why is it?",
+            "Because you can see the stars perfectly.",
+            "I really hope it rains today.",
+            "Yeah, me too."
+        ]
+    },
+    {
+        "user": "i really want to go to the beach this weekend.",
+        "bot": [
+            "That sounds like fun. What's the weather going to be like?",
+            "I heard that it's going to be warm this weekend.",
+            "Is it going to be perfect beach weather?",
+            "I believe so.",
+            "Good. I hope it doesn't cool off this weekend.",
+            "I know. I really want to go to the beach.",
+            "But you know that California weather is really unpredictable.",
+            "You're right. One minute it's hot, and then the next minute it's cold.",
+            "I really wish the weather would just stay the same.",
+            "I do too. That way we can have our activities planned ahead of time.",
+            "Yeah, that would make things a lot easier."
+        ]
+    },
+    {
+        "user": "i would like to take a trip to the beach this weekend.",
+        "bot": [
+            "A trip to the beach would be fun. How is the weather going to be?",
+            "The weather this weekend is supposed to be warm.",
+            "Will it be good beach weather?",
+            "I think it will be.",
+            "It wouldn't be good if it got cold this weekend.",
+            "I want this trip to be perfect, I hope it stays warm.",
+            "This California weather is so uncertain, it's impossible to know what'll happen.",
+            "I know. Every day the weather seems different.",
+            "I would love it if it wasn't always so unpredictable.",
+            "That would make it easier for us to make plans.",
+            "True. Predictable weather would make life easier."
+        ]
+    },
+    {
+        "user": "hello, may I speak to Alice please?",
+        "bot": [
+            "Speaking. What's up?",
+            "Why haven't you answered the phone?",
+            "My bad, I had chores to do.",
+            "That's all right.",
+            "What was the reason for your call?",
+            "I want to do something tomorrow with you.",
+            "Sounds good. What did you have in mind?",
+            "I was thinking about seeing a movie.",
+            "Okay, let's go see a movie. See you then. Goodbye."
+        ]
+    },
+    {
+        "user": "okay, let's go see a movie. until then.",
+        "bot": "until then. talk to you later."
+    },
+    {
+        "user": "is alice available?",
+        "bot": "you're talking to her."
+    },
+    {
+        "user": "i've called you a hundred times today.",
+        "bot": "i was busy doing something. i apologize."
+    },
+    {
+        "user": "did you need something?",
+        "bot": "no problem."
+    },
+    {
+        "user": "do you want to do something tomorrow?",
+        "bot": "is there somewhere special you wanted to go?"
+    },
+    {
+        "user": "how about a movie?",
+        "bot": "a movie sounds good."
+    },
+    {
+        "user": "call me tomorrow then.",
+        "bot": ""
+    },
+    {
+        "user": "have you seen the new girl in school?",
+        "bot": "no, i haven't."
+    },
+    {
+        "user": "she's really pretty.",
+        "bot": "describe her to me."
+    },
+    {
+        "user": "she's not too tall.",
+        "bot": "well, how tall is she?"
+    },
+    {
+        "user": "she's about five feet even.",
+        "bot": "what does she look like, though?"
+    },
+    {
+        "user": "she has pretty light brown eyes.",
+        "bot": "i may know which girl you're talking about."
+    },
+    {
+        "user": "so you have seen her around?",
+        "bot": "yes, i have."
+    },
+    {
+        "user": "there's a new girl in school, have you seen her yet?",
+        "bot": "i haven't seen her yet."
+    },
+    {
+        "user": "i think that she is very pretty.",
+        "bot": "tell me how she looks."
+    },
+    {
+        "user": "she's kind of short.",
+        "bot": "what height is she?"
+    },
+    {
+        "user": "she's probably about five feet.",
+        "bot": "that's nice, but tell me what she looks like."
+    },
+    {
+        "user": "the first thing i noticed was her beautiful brown eyes.",
+        "bot": "i think i might've bumped into her before."
+    },
+    {
+        "user": "are you telling me that you've seen her before?",
+        "bot": "i believe so."
+    },
+    {
+        "user": "have you met the new girl?",
+        "bot": "no. have you?"
+    },
+    {
+        "user": "she's one of the prettiest girls at the school.",
+        "bot": "what does she look like?"
+    },
+    {
+        "user": "well, she's quite short.",
+        "bot": "how tall would you say that she is?"
+    },
+    {
+        "user": "i would say she's only five feet.",
+        "bot": "what about her facial features?"
+    },
+    {
+        "user": "she has light brown eyes, absolutely beautiful.",
+        "bot": "i think i know who you're talking about."
+    },
+    {
+        "user": "have you seen her?",
+        "bot": "why weren't you at school yesterday?"
+    },
+    {
+        "user": "i wasn't really feeling well.",
+        "bot": "what was wrong with you?"
+    },
+    {
+        "user": "my stomach was upset.",
+        "bot": "do you feel better now?"
+    },
+    {
+        "user": "i don't really feel too well yet.",
+        "bot": "do you want anything to make you feel better?"
+    },
+    {
+        "user": "no, thanks. i already took some medicine.",
+        "bot": "i hope you feel better."
+    },
+    {
+        "user": "thank you.",
+        "bot": "why didn't you go to school yesterday?"
+    },
+    {
+        "user": "i stayed home because i wasn't feeling well.",
+        "bot": "what was your problem?"
+    },
+    {
+        "user": "my stomach was bothering me.",
+        "bot": "are you feeling any better?"
+    },
+    {
+        "user": "i'm still feeling under the weather.",
+        "bot": "would you like anything for your stomach?"
+    },
+    {
+        "user": "no, thanks. i already took some medicine.",
+        "bot": "i hope you feel better."
+    },
+    {
+        "user": "thanks a lot.",
+        "bot": "why didn't you go to school yesterday?"
+    },
+    {
+        "user": "i was sick.",
+        "bot": "how were you sick?"
+    },
+    {
+        "user": "i had a stomachache.",
+        "bot": "did it get any better?"
+    },
+    {
+        "user": "i'm still feeling a little sick.",
+        "bot": "do you want anything to make you feel better?"
+    },
+    {
+        "user": "no, thanks. i took something earlier.",
+        "bot": "get better."
+    },
+    {
+        "user": "thanks a lot.",
+        "bot": "did you hear the good news?"
+    },
+    {
+        "user": "no, i haven't.",
+        "bot": "i got a promotion at my job."
+    },
+    {
+        "user": "did you really?",
+        "bot": "seriously, i am so excited."
+    },
+    {
+        "user": "well, congratulations.",
+        "bot": "thank you."
+    },
+    {
+        "user": "i'm so happy for you.",
+        "bot": "really?"
+    },
+    {
+        "user": "yes. you really deserved this.",
+        "bot": "you think so?"
+    },
+    {
+        "user": "yes. good for you.",
+        "bot": "have you heard my good news?"
+    },
+    {
+        "user": "you haven't told me anything yet.",
+        "bot": "i got a promotion at work earlier this week."
+    },
+    {
+        "user": "is that right?",
+        "bot": "it's the truth. i am really happy."
+    },
+    {
+        "user": "congratulations on your promotion.",
+        "bot": "thank you very much."
+    },
+    {
+        "user": "i am really excited for you.",
+        "bot": "are you really?"
+    },
+    {
+        "user": "i'm serious. you deserved this promotion.",
+        "bot": "is that what you really think?"
+    },
+    {
+        "user": "yes, i do.",
+        "bot": "i haven't told you what happened yet, have i?"
+    },
+    {
+        "user": "i haven't heard anything.",
+        "bot": "my boss offered me a promotion, and i took it."
+    },
+    {
+        "user": "are you serious?",
+        "bot": "yes, i am really excited."
+    },
+    {
+        "user": "that's great. congratulations.",
+        "bot": "i appreciate that."
+    },
+    {
+        "user": "you have no idea how happy i am for you.",
+        "bot": "for real?"
+    },
+    {
+        "user": "you look really nice today.",
+        "bot": "thank you. i just got this outfit the other day."
+    },
+    {
+        "user": "really, where did you get it?",
+        "bot": "i got it from macy's."
+    },
+    {
+        "user": "it's really nice.",
+        "bot": "thanks again. you look nice today, too."
+    },
+    {
+        "user": "thank you. i just got these shoes today.",
+        "bot": "really? what kind of shoes are they?"
+    },
+    {
+        "user": "these are called all star chuck taylors.",
+        "bot": "i really like those. how much did they cost?"
+    },
+    {
+        "user": "they were about forty dollars.",
+        "bot": "i think i'm going to go buy myself a pair."
+    },
+    {
+        "user": "i absolutely love what you're wearing today.",
+        "bot": "you do? i just bought this outfit a couple days ago."
+    },
+    {
+        "user": "seriously, where did you get it?",
+        "bot": "i picked it up from macy's."
+    },
+    {
+        "user": "it looks really good on you.",
+        "bot": "thanks. you're looking good, too."
+    },
+    {
+        "user": "thanks. i just got these shoes today.",
+        "bot": "what kind of shoes are those?"
+    },
+    {
+        "user": "they're all star chuck taylors.",
+        "bot": "i really like those. how much were they?"
+    },
+    {
+        "user": "they were around forty dollars.",
+        "bot": "i might have to go get myself a pair."
+    },
+    {
+        "user": "i heard that you were sick yesterday.",
+        "bot": "yeah, i wasn't feeling too well."
+    },
+    {
+        "user": "are you feeling better today?",
+        "bot": "i'm still feeling a bit under the weather."
+    },
+    {
+        "user": "did you see a doctor?",
+        "bot": "no, i didn't. i just took some medicine and rested."
+    },
+    {
+        "user": "you should go see a doctor if you're still not feeling well.",
+        "bot": "maybe i will if it doesn't get better."
+    },
+    {
+        "user": "take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "i heard you weren't feeling well yesterday.",
+        "bot": "yeah, i had a bit of a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "i'm still not at a hundred percent."
+    },
+    {
+        "user": "did you go see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "if it persists, you should see a doctor.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "make sure to take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "why weren't you at school yesterday?",
+        "bot": "i wasn't feeling well."
+    },
+    {
+        "user": "what happened to you?",
+        "bot": "i had a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "a little bit, yeah."
+    },
+    {
+        "user": "did you see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "if it persists, you should see a doctor.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "i heard you weren't feeling well yesterday.",
+        "bot": "yeah, i had a bit of a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "i'm still not at a hundred percent."
+    },
+    {
+        "user": "did you go see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "if it persists, you should see a doctor.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "make sure to take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "why weren't you at school yesterday?",
+        "bot": "i wasn't feeling well."
+    },
+    {
+        "user": "what happened to you?",
+        "bot": "i had a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "a little bit, yeah."
+    },
+    {
+        "user": "did you see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "if it persists, you should see a doctor.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "i heard you weren't feeling well yesterday.",
+        "bot": "yeah, i had a bit of a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "i'm still not at a hundred percent."
+    },
+    {
+        "user": "did you go see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "if it persists, you should see a doctor.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "make sure to take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "why weren't you at school yesterday?",
+        "bot": "i wasn't feeling well."
+    },
+    {
+        "user": "what happened to you?",
+        "bot": "i had a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "a little bit, yeah."
+    },
+    {
+        "user": "did you see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "you should see a doctor if it persists.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "i heard you weren't feeling well yesterday.",
+        "bot": "yeah, i had a bit of a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "i'm still not at a hundred percent."
+    },
+    {
+        "user": "did you go see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "if it persists, you should see a doctor.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "make sure to take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "why weren't you at school yesterday?",
+        "bot": "i wasn't feeling well."
+    },
+    {
+        "user": "what happened to you?",
+        "bot": "i had a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "a little bit, yeah."
+    },
+    {
+        "user": "did you see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "you should see a doctor if it persists.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "i heard you weren't feeling well yesterday.",
+        "bot": "yeah, i had a bit of a stomachache."
+    },
+    {
+        "user": "are you feeling better now?",
+        "bot": "i'm still not at a hundred percent."
+    },
+    {
+        "user": "did you go see a doctor?",
+        "bot": "no, i didn't. just took some medicine and rested."
+    },
+    {
+        "user": "if it persists, you should see a doctor.",
+        "bot": "you're right. i'll consider that."
+    },
+    {
+        "user": "make sure to take care of yourself.",
+        "bot": "thanks. i appreciate your concern."
+    },
+    {
+        "user": "have you heard what happened?",
+        "bot": "heard what?"
+    },
+    {
+        "user": "debrah already had her baby.",
+        "bot": "i didn't know that."
+    },
+    {
+        "user": "i thought you knew.",
+        "bot": "i honestly didn't know."
+    },
+    {
+        "user": "the baby was 8 pounds 6 ounces.",
+        "bot": "that's good to hear."
+    },
+    {
+        "user": "will you go and visit them?",
+        "bot": "of course i will."
+    },
+    {
+        "user": "i just wanted to give you the good news.",
+        "bot": "thanks for letting me know."
+    },
+    {
+        "user": "have you heard the news?",
+        "bot": "i haven't heard anything."
+    },
+    {
+        "user": "debrah had her baby last week.",
+        "bot": "nobody told me."
+    },
+    {
+        "user": "i thought you heard.",
+        "bot": "i really wasn't told anything."
+    },
+    {
+        "user": "she was a cute 8 pounds 6 ounces.",
+        "bot": "wow, how exciting."
+    },
+    {
+        "user": "i know, you should really go and see her and the baby.",
+        "bot": "of course i will."
+    },
+    {
+        "user": "i just wanted to let you know what happened.",
+        "bot": "thanks for coming to see me today."
+    },
+    {
+        "user": "it's no problem. i was really missing you anyway.",
+        "bot": "i missed you too."
+    },
+    {
+        "user": "why haven't you tried to come see me then?",
+        "bot": "i've been really busy."
+    },
+    {
+        "user": "doing what?",
+        "bot": "working."
+    },
+    {
+        "user": "i would've come to see you sooner, but i've been busy too.",
+        "bot": "what have you been doing?"
+    },
+    {
+        "user": "i've just been working really hard.",
+        "bot": "well regardless, i'm very happy that you came to see me."
+    },
+    {
+        "user": "i am too.",
+        "bot": "i'm really glad that you came to visit me."
+    },
+    {
+        "user": "i really missed you a lot.",
+        "bot": "i've been missing you like crazy."
+    },
+    {
+        "user": "lately, i've been quite busy.",
+        "bot": "tell me what you've been up to."
+    },
+    {
+        "user": "basically, i've been working too.",
+        "bot": "whatever the reason may be, i'm glad you visited me."
+    },
+    {
+        "user": "hey, did you hear about jessica's party this weekend?",
+        "bot": "yeah, but i'm still waiting for my invitation."
+    },
+    {
+        "user": "oh really? she gave me mine earlier today.",
+        "bot": "well, she'll probably just give me my invitation later on today."
+    },
+    {
+        "user": "yeah, so are you planning on going?",
+        "bot": "i think so. it sounds like it's going to be a lot of fun."
+    },
+    {
+        "user": "it really does, i can't wait.",
+        "bot": "what time does the party start?"
+    },
+    {
+        "user": "it starts at 8 o'clock.",
+        "bot": "oh, well, how many people has she given invites to so far?"
+    },
+    {
+        "user": "i'm not sure, but i don't think she's given out that many.",
+        "bot": "well, hopefully she'll give me my invite later on today."
+    },
+    {
+        "user": "i've heard about it, but i'm still waiting for my invitation.",
+        "bot": "really? i got mine from her this morning."
+    },
+    {
+        "user": "i'm guessing that she's going to give me my invite today or tomorrow.",
+        "bot": "you're probably right, do you intend on going to the party?"
+    },
+    {
+        "user": "i want to. i heard it's going to be really fun.",
+        "bot": "i know, it does sound pretty awesome."
+    },
+    {
+        "user": "well, when does the party start?",
+        "bot": "it's supposed to start at about eight."
+    },
+    {
+        "user": "how many invitations has she given out?",
+        "bot": "i really don't know, but i don't think she gave out that many yet."
+    },
+    {
+        "user": "i really want to go, so i hope that she gives me my invite soon.",
+        "bot": "has anyone told you about jessica's party coming up?"
+    },
+    {
+        "user": "is that right? i already got my invitation from her earlier.",
+        "bot": "i believe that she will give me the invitation today."
+    },
+    {
+        "user": "are you even going to go?",
+        "bot": "yeah, it sounds like it's going to be the best party of the year."
+    },
+    {
+        "user": "exactly, it seems like it's going to be loads of fun.",
+        "bot": "when exactly does the party start?"
+    },
+    {
+        "user": "the invitation says it starts at 8:00 p.m.",
+        "bot": "has she given out a lot of invitations yet?"
+    },
+    {
+        "user": "i have no idea, she hasn't given out many though.",
+        "bot": "i really want to go, so i hope that she gives me my invite soon."
+    },
+    {
+        "user": "nothing really.",
+        "bot": "i'm throwing a party on friday."
+    },
+    {
+        "user": "i didn't realize that.",
+        "bot": "you didn't? nobody has told me anything about your party."
+    },
+    {
+        "user": "did you want to go?",
+        "bot": "when does it start?"
+    },
+    {
+        "user": "at 8:00 p.m.",
+        "bot": "i'll be there."
+    },
+    {
+        "user": "of course.",
+        "bot": "i'd better see you there."
+    },
+    {
+        "user": "what's going on with you?",
+        "bot": "i'm having a party this friday."
+    },
+    {
+        "user": "i had no idea.",
+        "bot": "is that right? i didn't hear anything about it."
+    },
+    {
+        "user": "can you go?",
+        "bot": "what time?"
+    },
+    {
+        "user": "it starts at 8 o'clock.",
+        "bot": "i'll go."
+    },
+    {
+        "user": "i hope that i'll see you there.",
+        "bot": "of course."
+    },
+    {
+        "user": "not much.",
+        "bot": "this friday, i'm throwing a party."
+    },
+    {
+        "user": "oh, really? i didn't know that.",
+        "bot": "are you serious? i haven't heard anything about it."
+    },
+    {
+        "user": "what time?",
+        "bot": "the party starts at 8 o'clock."
+    },
+    {
+        "user": "i'll go.",
+        "bot": "i hope that i'll see you there."
+    },
+    {
+        "user": "yeah, maybe next time.",
+        "bot": "i'll hold you to that."
+    },
+    {
+        "user": "all right, so i'll see you then.",
+        "bot": "i'll call you later."
+    },
+    {
+        "user": "what's going on with you?",
+        "bot": "nothing really. how about you?"
+    },
+    {
+        "user": "i'm having a party next saturday.",
+        "bot": "oh, really?"
+    },
+    {
+        "user": "you are coming?",
+        "bot": "probably not."
+    },
+    {
+        "user": "why not?",
+        "bot": "i don't feel like going."
+    },
+    {
+        "user": "i understand, i guess.",
+        "bot": "sorry about that."
+    },
+    {
+        "user": "nothing really, what's going on?",
+        "bot": "i'm having a party next saturday."
+    },
+    {
+        "user": "that's nice.",
+        "bot": "are you going to be there?"
+    },
+    {
+        "user": "i don't think so.",
+        "bot": "is there a reason why?"
+    },
+    {
+        "user": "i just really don't want to go.",
+        "bot": "how come?"
+    },
+    {
+        "user": "i don't really like parties.",
+        "bot": "i wish you would go, but that's okay."
+    },
+    {
+        "user": "not much, what about you?",
+        "bot": "i'm throwing a party on friday."
+    },
+    {
+        "user": "i didn't know that.",
+        "bot": "you didn't?"
+    },
+    {
+        "user": "nobody has told me anything about your party.",
+        "bot": "did you want to go?"
+    },
+    {
+        "user": "when does it start?",
+        "bot": "at 8:00 p.m."
+    },
+    {
+        "user": "i'll go.",
+        "bot": "i hope that i'll see you there."
+    },
+    {
+        "user": "of course.",
+        "bot": "see you later."
+    },
+    {
+        "user": "what's happening?",
+        "bot": "not a lot, what about you?"
+    },
+    {
+        "user": "i'm having a party this friday.",
+        "bot": "oh, really? that's nice."
+    },
+    {
+        "user": "i wanted to see if you wanted to come.",
+        "bot": "this friday? sorry, i already have plans."
+    },
+    {
+        "user": "doing what?",
+        "bot": "i'm going to dinner with my family."
+    },
+    {
+        "user": "i really wanted you to come, but i understand.",
+        "bot": "yeah, maybe next time."
+    },
+    {
+        "user": "i'll definitely try to make it the next time.",
+        "bot": "i'll look for you at my next party."
+    },
+    {
+        "user": "i had fun talking to you.",
+        "bot": "it was really nice talking to you also."
+    },
+    {
+        "user": "we should hang out some time.",
+        "bot": "that should be loads of fun."
+    },
+    {
+        "user": "is there anything you would like to do next time?",
+        "bot": "do you want to go out to eat?"
+    },
+    {
+        "user": "i'd like that.",
+        "bot": "so i'll see you next time."
+    },
+    {
+        "user": "i'm going to call you soon.",
+        "bot": "talk to you then."
+    },
+    {
+        "user": "all right, see you.",
+        "bot": "goodbye."
+    },
+    {
+        "user": "i enjoyed talking to you.",
+        "bot": "i enjoyed talking to you too."
+    },
+    {
+        "user": "we should really do something sometime.",
+        "bot": "that would be nice."
+    },
+    {
+        "user": "what do you want to do next time?",
+        "bot": "would you like to go to dinner or something?"
+    },
+    {
+        "user": "yeah, let's do that.",
+        "bot": "okay, until next time then."
+    },
+    {
+        "user": "i'll call you so we can set that up.",
+        "bot": "talk to you then."
+    },
+    {
+        "user": "see you soon.",
+        "bot": "goodbye."
+    },
+    {
+        "user": "goodbye.",
+        "bot": "i'm sorry, but i must go."
+    },
+    {
+        "user": "okay.",
+        "bot": "fine."
+    },
+    {
+        "user": "it was nice talking to you.",
+        "bot": "it was nice talking to you too."
+    },
+    {
+        "user": "we should really hang out again.",
+        "bot": "that would be fun."
+    },
+    {
+        "user": "where do you want to go?",
+        "bot": "i think we should go out to eat."
+    },
+    {
+        "user": "that sounds good.",
+        "bot": "all right, so i'll see you then."
+    },
+    {
+        "user": "i'll call you later.",
+        "bot": "okay, i'll talk to you later then."
+    },
+    {
+        "user": "see you later.",
+        "bot": "bye."
+    },
+    {
+        "user": "i enjoyed talking to you.",
+        "bot": "i enjoyed talking to you too."
+    },
+    {
+        "user": "we should hang out some time.",
+        "bot": "i think that would be nice."
+    },
+    {
+        "user": "is there anything you would like to do next time?",
+        "bot": "do you want to go out to eat?"
+    },
+    {
+        "user": "i'd like that.",
+        "bot": "so i'll see you next time."
+    },
+    {
+        "user": "i'm going to call you soon.",
+        "bot": "talk to you then."
+    },
+    {
+        "user": "see you soon.",
+        "bot": "goodbye."
+    },
+    {
+        "user": "i had fun talking to you.",
+        "bot": "i had fun talking to you too."
+    },
+    {
+        "user": "we should really do something sometime.",
+        "bot": "that would be nice."
+    },
+    {
+        "user": "what do you want to do next time?",
+        "bot": "would you like to go to dinner or something?"
+    },
+    {
+        "user": "yeah, let's do that.",
+        "bot": "okay, until next time then."
+    },
+    {
+        "user": "i'll call you so we can set that up.",
+        "bot": "talk to you then."
+    },
+    {
+        "user": "see you soon.",
+        "bot": "goodbye."
+    },
+    {
+        "user": "goodbye.",
+        "bot": "i'm sorry, but i must go."
+    },
+    {
+        "user": "okay.",
+        "bot": "fine."
+    },
+    {
+        "user": "it was nice talking to you.",
+        "bot": "it was nice talking to you too."
+    },
+    {
+        "user": "we should really hang out again.",
+        "bot": "that would be fun."
+    },
+    {
+        "user": "where do you want to go?",
+        "bot": "i think we should go out to eat."
+    },
+    {
+        "user": "that sounds good.",
+        "bot": "all right, so i'll see you then."
+    },
+    {
+        "user": "i'll call you later.",
+        "bot": "okay, i'll talk to you later then."
+    },
+    {
+        "user": "see you later.",
+        "bot": "bye."
+    },
+    {
+        "user": "I'm going to the bank. What do you need to do?",
+        "bot": [
+            "What do you need to do?"
+        ]
+    },
+    {
+        "user": "I need to withdraw some money.",
+        "bot": [
+            "How are you going to do that?"
+        ]
+    },
+    {
+        "user": "I'll just use the ATM.",
+        "bot": [
+            "What's that?"
+        ]
+    },
+    {
+        "user": "It's the automatic teller machine.",
+        "bot": [
+            "It gives you money?"
+        ]
+    },
+    {
+        "user": "I just insert my debit card into the machine.",
+        "bot": [
+            "And it gives you money?"
+        ]
+    },
+    {
+        "user": "Well, it gives me money, but it's my own money.",
+        "bot": [
+            "Oh. What good is that? I thought it gave you free money."
+        ]
+    },
+    {
+        "user": "Did you put the blue bin out on the street?",
+        "bot": [
+            "Oh, no. I forgot."
+        ]
+    },
+    {
+        "user": "Well, you'd better take it out front.",
+        "bot": [
+            "What time does the recycle truck come by?"
+        ]
+    },
+    {
+        "user": "It usually gets here at noon on Tuesday, which is tomorrow.",
+        "bot": [
+            "I'll just take it out to the street tomorrow morning."
+        ]
+    },
+    {
+        "user": "Oh, no, you don't.",
+        "bot": [
+            "What do you mean?"
+        ]
+    },
+    {
+        "user": "Every morning you get up late and rush off to work late.",
+        "bot": [
+            "Do you think I'll forget to do it?"
+        ]
+    },
+    {
+        "user": "You'll remember to do it, but you won't have time to do it.",
+        "bot": [
+            "Okay, I'll take it out front right now."
+        ]
+    },
+    {
+        "user": "Are you ready?",
+        "bot": [
+            "Ready for what?"
+        ]
+    },
+    {
+        "user": "The big switch.",
+        "bot": [
+            "What are you talking about?"
+        ]
+    },
+    {
+        "user": "The nation is switching to digital TV.",
+        "bot": [
+            "Oh. Of course, I'm ready."
+        ]
+    },
+    {
+        "user": "Did you buy the converter?",
+        "bot": [
+            "No, I don't need a converter because I bought a digital TV."
+        ]
+    },
+    {
+        "user": "How much was that?",
+        "bot": [
+            "It was only about $120 for a 13-inch screen."
+        ]
+    },
+    {
+        "user": "Does it pick up any digital channels?",
+        "bot": [
+            "Oh, yes. I get six Korean channels but nothing in English!"
+        ]
+    },
+    {
+        "user": "People are funny.",
+        "bot": [
+            "They sure are."
+        ]
+    },
+    {
+        "user": "Did you hear about the pilot?",
+        "bot": [
+            "The one that stole a small plane?"
+        ]
+    },
+    {
+        "user": "Yes, he stole a plane in Canada and flew into the U.S.",
+        "bot": [
+            "Did they catch him?"
+        ]
+    },
+    {
+        "user": "Yes. After two U.S. fighter jets followed him for an hour, he landed on a highway.",
+        "bot": [
+            "Did he crash?"
+        ]
+    },
+    {
+        "user": "No, he just landed the plane and walked to a restaurant.",
+        "bot": [
+            "Did the cops find out why he flew into the U.S.?"
+        ]
+    },
+    {
+        "user": "His life sucked. He was hoping a fighter jet would shoot him down.",
+        "bot": [
+            "Poor guy."
+        ]
+    },
+    {
+        "user": "The police need our help finding a robber.",
+        "bot": [
+            "How do you know?"
+        ]
+    },
+    {
+        "user": "The TV news is reporting a bank robbery.",
+        "bot": [
+            "Do they know what the robber looks like?"
+        ]
+    },
+    {
+        "user": "Yes, he's 6 feet tall, 200 pounds, black hair, and about 30 years old.",
+        "bot": [
+            "What race is he?"
+        ]
+    },
+    {
+        "user": "They didn't say.",
+        "bot": [
+            "The TV news doesn't tell us the race anymore."
+        ]
+    },
+    {
+        "user": "Of course not. That would be racist.",
+        "bot": [
+            "But how can we identify someone if we don't know their race?"
+        ]
+    },
+    {
+        "user": "Don't ask me.",
+        "bot": [
+            "Then they also shouldn't tell us if the robber is male or female, because that is sexist."
+        ]
+    },
+    {
+        "user": "Don't wipe your nose on your sleeve.",
+        "bot": [
+            "But I don't have a tissue."
+        ]
+    },
+    {
+        "user": "Then go find a tissue in the bathroom.",
+        "bot": [
+            "I didn't have time to get one from there."
+        ]
+    },
+    {
+        "user": "Your sleeves are not tissues.",
+        "bot": [
+            "But mom, all my friends use their sleeves."
+        ]
+    },
+    {
+        "user": "That doesn't make it right.",
+        "bot": [
+            "I saw Dad wipe his nose on his sleeve yesterday."
+        ]
+    },
+    {
+        "user": "I will talk to your father about that.",
+        "bot": [
+            "I bet Dad did it all the time when he was my age."
+        ]
+    },
+    {
+        "user": "Your daddy was a good little boy.",
+        "bot": [
+            "How do you know? Were you his mommy, too?"
+        ]
+    },
+    {
+        "user": "I'm worried.",
+        "bot": [
+            "Worried about what?"
+        ]
+    },
+    {
+        "user": "I'm getting married.",
+        "bot": [
+            "You should be happy, not worried."
+        ]
+    },
+    {
+        "user": "Yes, I am happy, but marriage is a lot of responsibility.",
+        "bot": [
+            "Yes, you have to take care of your wife."
+        ]
+    },
+    {
+        "user": "And I have to take care of our children.",
+        "bot": [
+            "Are you going to start a family?"
+        ]
+    },
+    {
+        "user": "Yes. We want to have a little boy and a little girl.",
+        "bot": [
+            "That sounds wonderful."
+        ]
+    },
+    {
+        "user": "Except we can't afford it!",
+        "bot": [
+            "No wonder you're worried."
+        ]
+    },
+    {
+        "user": "I don't get art.",
+        "bot": [
+            "Or artists."
+        ]
+    },
+    {
+        "user": "They're in a different world.",
+        "bot": [
+            "I saw a painting of a jar that was full of pencils."
+        ]
+    },
+    {
+        "user": "The artist said the jar was both full and empty.",
+        "bot": [
+            "But it was full of pencils! How could he say it was empty?"
+        ]
+    },
+    {
+        "user": "Artists see things differently.",
+        "bot": [
+            "Did you ever see anything that Picasso painted?"
+        ]
+    },
+    {
+        "user": "Of course! He's world-famous.",
+        "bot": [
+            "Did he ever take art lessons?"
+        ]
+    },
+    {
+        "user": "I can't believe it. I drew paintings like that in third grade.",
+        "bot": [
+            "Where are they? Maybe they are worth millions."
+        ]
+    },
+    {
+        "user": "What's the point?",
+        "bot": [
+            "The point of what?"
+        ]
+    },
+    {
+        "user": "Of living.",
+        "bot": [
+            "Who knows? You live, and then you die."
+        ]
+    },
+    {
+        "user": "We must be here for some reason.",
+        "bot": [
+            "Maybe we're here to have fun."
+        ]
+    },
+    {
+        "user": "Then why aren't I having fun?",
+        "bot": [
+            "Because you're thinking too much."
+        ]
+    },
+    {
+        "user": "So I should stop thinking?",
+        "bot": [
+            "Stop thinking about what the point is."
+        ]
+    },
+    {
+        "user": "Okay. I'll go have fun.",
+        "bot": [
+            "That's the spirit!"
+        ]
+    }
+]

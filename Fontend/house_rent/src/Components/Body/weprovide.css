@@ -1,0 +1,33 @@
+.category-menu-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+}
+
+.category-menu-content .item {
+    flex: 1 0 18%;  /* Grow and shrink equally, base width of 18% */
+    position: relative;
+    min-height: 142px;
+    border: 1px solid #6053fc;
+    padding: 3% 2% 2%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 15px;
+}
+
+/* On screens that are 600px or less, make each item take up the full width and add padding */
+@media screen and (max-width: 600px) {
+    .category-menu-content .item {
+        flex: 1 0 100%;
+        padding: 10% 2% 2%;
+    }
+}
